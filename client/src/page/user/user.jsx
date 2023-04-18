@@ -1,6 +1,6 @@
 import React from 'react'
 import Leftsidebar from '../../component/Leftsidebar/Leftsidebar'
-import { useLocation } from 'react-router-dom'
+
 import UserList from './UserList.jsx'
 import './user.css'
 
