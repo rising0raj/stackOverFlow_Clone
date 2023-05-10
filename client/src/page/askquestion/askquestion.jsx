@@ -11,11 +11,35 @@ const Askquestion=()=>{
     const dispatch =useDispatch()
     const User =useSelector((state) => (state.currentUserReducer))
     const navigate=useNavigate()
-
-
+    
     const handleSubmit=(e)=>{
         e.preventDefault()
-        dispatch(askQuestion({
+        if(User.result.silver.length === 1){
+            if(User.result.noofquestion.length === 0 || User.result.noofquestion.length <= 5){dispatch(askQuestion({
+                    questionTitle,
+                    questionBody,
+                    questionTags,
+                    userPosted:User.result.name,
+                    userId:User?.result?._id},
+                    navigate
+                    ))
+                    alert("question is posted sucessfully logout and thn logiin to continue");}
+            else{
+                alert("you cannot post nore than 5 question a day ")
+            }
+        }
+        if(User.result.gold.length === 1){
+            dispatch(askQuestion({
+                questionTitle,
+                questionBody,
+                questionTags,
+                userPosted:User.result.name,
+                userId:User?.result?._id},
+                navigate
+            ))
+            alert("question is posted sucessfully logout and thn logiin to continue");
+        }
+        if(User.result.free.length === 0 && User.result.noofquestion.length ===0){dispatch(askQuestion({
             questionTitle,
             questionBody,
             questionTags,
@@ -23,6 +47,9 @@ const Askquestion=()=>{
             userId:User?.result?._id},
             navigate
         ))
+        alert("question is posted sucessfully logout and thn logiin to continue");}
+        if(User.result.free.length === 0 && User.result.noofquestion.length ===1 && User.result.silver.length === 0 && User.result.gold.length === 0){alert("you are on free membership and can post only one question a day ")}
+
     }
 
     const handleEnter=(e)=>{

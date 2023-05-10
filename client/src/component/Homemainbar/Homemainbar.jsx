@@ -10,7 +10,7 @@ const Homemainbar = () => {
     const user=useSelector((state) => state.currentUserReducer);
     const navigate=useNavigate();
     const questionsList=useSelector(state=>state.questionsReducer)
-
+    // console.log(user.result.opt)
     // var questionsList = [
     //     {
     //         _id: 1,
@@ -80,7 +80,7 @@ const Homemainbar = () => {
             navigate('/Auth');
         }
         else{
-            navigate('/askquestion')
+            navigate('/optverification')
         }
     }
 

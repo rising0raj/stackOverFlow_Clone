@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import { fetchAllQuestions } from './action/question';
 import { useDispatch } from 'react-redux';
 import { fetchAllUsers } from './action/users';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 

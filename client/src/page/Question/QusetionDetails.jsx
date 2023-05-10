@@ -80,7 +80,7 @@ const QuestionDeatils = () => {
   const Navigate=useNavigate()
   const dispatch=useDispatch()
   const location=useLocation()
-  const url='https://server-h7fz.onrender.com'
+  const url='http://localhost:5000'
 
   const handlePostAns = (e, answerLength) => {
     e.preventDefault();

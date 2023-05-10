@@ -1,12 +1,9 @@
 .user-details-container {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-  }
-  .home-conatiner-1{
-    padding: 50px;
   }
   .user-details {
     display: flex;
@@ -138,4 +135,24 @@
       padding-right: 20px;
     }
   }
-  
+  /* .link {
+    
+    text-decoration: none;
+    color: #3a3a3a;
+    transition: 0.2s;
+    
+} */
+.review-btn {
+  margin: 50px 0px;
+  padding: 10px;
+  background-color: #009dff;
+  border: solid 1px #009dff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-btn:hover {
+  background-color: #0086d8;
+}

@@ -1,0 +1,23 @@
+.sub-container-2{
+    padding-top: 50px;
+}
+.detail{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    width: calc(100% - 20px);
+}
+.review-btn {
+    margin: 50px 0px;
+    padding: 10px;
+    background-color: #009dff;
+    border: solid 1px #009dff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review-btn:hover {
+    background-color: #0086d8;
+}

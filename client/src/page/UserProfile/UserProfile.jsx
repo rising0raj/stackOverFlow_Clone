@@ -8,6 +8,7 @@ import moment from 'moment'
 import EditProfileFrom from './EditProfileFrom'
 import ProfileBio from './ProfileBio'
 import './userProfile.css'
+import { NavLink } from "react-router-dom";
 
 const UserProfile = () => {
 
@@ -20,7 +21,6 @@ const UserProfile = () => {
 
     return (
     <div className="home-conatiner-1">
-        {/* <Leftsidebar/> */}
         <div className="home-conatiner-2">
             <section>
                 <div className="user-details-container">
@@ -49,6 +49,9 @@ const UserProfile = () => {
                 </>
             </section>
         </div>
+        <NavLink to="/" className="link" >
+        <input className='review-btn'  value='HOME' />
+                    </NavLink>
     </div>
     )
 }

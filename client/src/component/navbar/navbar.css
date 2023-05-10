@@ -10,21 +10,22 @@
     left:0%;
     background-color: #f8f9f9;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .navbar{
     height: 100%;
-    min-width: 85%;
+    min-width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .nav-logo{
-    padding: 5px 25px;
-}
+    padding: 5px 10px;
+    float: left;
+} 
 
 .nav-item{
     margin:0px 3px;
@@ -47,12 +48,12 @@
 
 .navbar form{
     flex-grow: 1;
-    margin: 0px 12px;
+    margin: 0px;
     position: relative;
 }
 
 .navbar form input{
-    min-width: 90%;
+    min-width: 50%;
     margin:0;
     padding: 8px 10px 8px 32px;
     font-size: 13px;
