@@ -15,7 +15,7 @@ const DisplayAnswer = ({ question,handleShare }) => {
     }
 
     return (
-        <div>
+        <div style={{paddingTop:"50px"}}>
             {question.answer.map((ans) => (
                 <div className="display-ans" key={ans._id}>
                     <p>{ans.answerBody}</p>

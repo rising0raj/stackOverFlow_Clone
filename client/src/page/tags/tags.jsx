@@ -69,7 +69,7 @@ const Tags=()=> {
     ];
     return (
     <div>
-        <div className="home-container-1">
+        <div className="home-container-1" style={{paddingTop:"50px"}}>
             <Leftsidebar/>
             <div className="home-container-2">
                 <h1 className='tags-h1'>Tags</h1>

@@ -28,8 +28,8 @@ const Subscription = () => {
       dispatch(navigate)
     }
     const checkOutHandlersilver=async(amount,email)=>{
-      const {data:{key}}=await axios.get("http://localhost:5000/payment/getkey")
-      const {data:{order}} =await axios.post("http://localhost:5000/payment/checkOut",{amount,email})
+      const {data:{key}}=await axios.get("https://server666.onrender.com/payment/getkey")
+      const {data:{order}} =await axios.post("https://server666.onrender.com/payment/checkOut",{amount,email})
       const options = {
         key:key, 
         amount: order.amount, 
@@ -38,11 +38,11 @@ const Subscription = () => {
         description: "JUST FOR PROJECT",
         image: "logo",
         order_id: order.id, 
-        callback_url: "http://localhost:5000/payment/paymentVerify",
+        callback_url: "https://server666.onrender.com/payment/paymentVerify",
         prefill: {
             name: User.result.name,
           email: User.result.email,
-            contact: "9000090000"
+            contact: "0000000000"
         },
         notes: {
             "address": "Razorpay Corporate Office"
@@ -60,8 +60,8 @@ const Subscription = () => {
   }
   }
   const checkOutHandlergold=async(amount,email)=>{
-    const {data:{key}}=await axios.get("http://localhost:5000/payment/getkey")
-    const {data:{order}} =await axios.post("http://localhost:5000/payment/checkOut",{amount,email})
+    const {data:{key}}=await axios.get("https://server666.onrender.com/payment/getkey")
+    const {data:{order}} =await axios.post("https://server666.onrender.com/payment/checkOut",{amount,email})
     const options = {
       key:key, 
       amount: order.amount, 
@@ -70,7 +70,7 @@ const Subscription = () => {
       description: "JUST FOR PROJECT",
       image: "logo",
       order_id: order.id, 
-      callback_url: "http://localhost:5000/payment/paymentVerify",
+      callback_url: "https://server666.onrender.com/payment/paymentVerify",
       prefill: {
           name: User.result.name,
         email: User.result.email,
@@ -92,11 +92,12 @@ const Subscription = () => {
   }
 }
     return (
-    <div className="sub-container-1">
+    <div className="sub-container-1" style={{paddingTop:"50px"}}>
       <div className="sub-container-2">
         <h1 className='detail'>A free user can only ask one question a day </h1>
         <h1 className="detail">A silver membership user can ask 5 question a day </h1>
         <h1 className="detail">A gold membership can ask ultimated question a day</h1>
+        <h1>NOTE :- after buying silver or gold membership you nedd to first logout and then login again to see it in you account</h1>
         <ChakraProvider>
           <Stack alignItems="center" justifyContent="center"padding="20px" direction={"column"}>
             <Card amount={0} img={logo0} checkOutHandler={checkOutHandlerfree} />

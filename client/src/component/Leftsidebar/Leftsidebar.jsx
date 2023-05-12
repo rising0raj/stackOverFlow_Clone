@@ -5,7 +5,7 @@ import Globe from "../../assets/Globe.svg";
 
 const Leftsidebar = () => {
     return (
-        <div className="left-sidebar">
+        <div className="left-sidebar" style={{paddingTop:"50px"}}>
             <nav className="side-nav">
                 <NavLink to="/" className="side-nav-links" activeclassname="active">
                     <p>Home</p>

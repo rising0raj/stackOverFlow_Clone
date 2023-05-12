@@ -59,7 +59,7 @@ const Askquestion=()=>{
     }
 
     return(
-        <div className="ask-question">
+        <div className="ask-question" style={{paddingTop:"50px"}}>
             <div className="ask-ques-container">
                 <h1>Ask a public Question</h1>
                 <form onSubmit={handleSubmit}>

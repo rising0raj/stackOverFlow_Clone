@@ -80,7 +80,7 @@ const QuestionDeatils = () => {
   const Navigate=useNavigate()
   const dispatch=useDispatch()
   const location=useLocation()
-  const url='http://localhost:5000'
+  const url='https://server666.onrender.com'
 
   const handlePostAns = (e, answerLength) => {
     e.preventDefault();
@@ -122,7 +122,7 @@ const QuestionDeatils = () => {
   }
 
   return (
-    <div className="question-details-page">
+    <div className="question-details-page" style={{paddingTop:"50px"}}>
       {questionsList.data === null ? (
         <h1>Loading...</h1>
       ) : (<>

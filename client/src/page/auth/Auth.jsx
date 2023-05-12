@@ -35,7 +35,7 @@ const Auth = () => {
     }
 
     return (
-    <section className="auth-section">
+    <section className="auth-section" style={{paddingTop:"50px"}}>
         {sigUp && <AboutAuth />}
         <div className="auth-container-2">
         {!sigUp && (

@@ -6,7 +6,7 @@ import "../../App.css";
 
 const Home=()=>{
     return(
-        <div className='home-container-1'>
+        <div className='home-container-1' style={{paddingTop:"50px"}}>
             <Leftsidebar/>
             <div className='home-container-2'>
                 <Homemainbar/>

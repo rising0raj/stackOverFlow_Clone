@@ -9,7 +9,7 @@ const User = () => {
     
     return (
     <div>
-        <div className="home-container-1">
+        <div className="home-container-1" style={{paddingTop:"50px"}}>
         <Leftsidebar/>
         <div className="home-container-2" style={{marginTop:"30px"}}>
             <h1 style={{fontWeight:"400"}}>Users</h1>
